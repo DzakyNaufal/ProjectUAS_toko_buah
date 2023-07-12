@@ -61,5 +61,17 @@ namespace ProjectUAS_toko_buah
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form9 fs = new Form9();
+            fs.Show();
+            this.Hide();
+        }
     }
 }

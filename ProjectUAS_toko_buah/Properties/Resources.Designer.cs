@@ -63,6 +63,16 @@ namespace ProjectUAS_toko_buah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap data_spreadsheet {
+            get {
+                object obj = ResourceManager.GetObject("data-spreadsheet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_Beli {
             get {
                 object obj = ResourceManager.GetObject("Icon Beli", resourceCulture);
@@ -93,6 +103,36 @@ namespace ProjectUAS_toko_buah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_data_master {
+            get {
+                object obj = ResourceManager.GetObject("icon data master", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_data_master_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("icon_data_master-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_data_relasi_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("icon_data_relasi-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_Jual_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Icon_Jual-removebg-preview", resourceCulture);
@@ -103,9 +143,29 @@ namespace ProjectUAS_toko_buah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Keys_icon {
+            get {
+                object obj = ResourceManager.GetObject("Keys-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left_arrow {
             get {
                 object obj = ResourceManager.GetObject("left-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap up_and_down {
+            get {
+                object obj = ResourceManager.GetObject("up-and-down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
