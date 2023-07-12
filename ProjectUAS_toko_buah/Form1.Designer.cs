@@ -72,41 +72,48 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.adminToolStripMenuItem.Text = "Admin";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // buahToolStripMenuItem
             // 
             this.buahToolStripMenuItem.Name = "buahToolStripMenuItem";
             this.buahToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.buahToolStripMenuItem.Text = "Buah";
+            this.buahToolStripMenuItem.Click += new System.EventHandler(this.buahToolStripMenuItem_Click);
             // 
             // pemasokToolStripMenuItem
             // 
             this.pemasokToolStripMenuItem.Name = "pemasokToolStripMenuItem";
             this.pemasokToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.pemasokToolStripMenuItem.Text = "Pemasok";
+            this.pemasokToolStripMenuItem.Click += new System.EventHandler(this.pemasokToolStripMenuItem_Click);
             // 
             // detailBeliToolStripMenuItem
             // 
             this.detailBeliToolStripMenuItem.Name = "detailBeliToolStripMenuItem";
             this.detailBeliToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.detailBeliToolStripMenuItem.Text = "Detail Beli";
+            this.detailBeliToolStripMenuItem.Click += new System.EventHandler(this.detailBeliToolStripMenuItem_Click);
             // 
             // detailJualToolStripMenuItem
             // 
             this.detailJualToolStripMenuItem.Name = "detailJualToolStripMenuItem";
             this.detailJualToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.detailJualToolStripMenuItem.Text = "Detail Jual";
+            this.detailJualToolStripMenuItem.Click += new System.EventHandler(this.detailJualToolStripMenuItem_Click);
             // 
             // buahRusakToolStripMenuItem
             // 
             this.buahRusakToolStripMenuItem.Name = "buahRusakToolStripMenuItem";
             this.buahRusakToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.buahRusakToolStripMenuItem.Text = "Buah Rusak";
+            this.buahRusakToolStripMenuItem.Click += new System.EventHandler(this.buahRusakToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";

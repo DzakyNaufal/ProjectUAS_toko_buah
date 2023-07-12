@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_toko_buah
 {
-    public partial class Form5 : Form
+    public partial class Form8 : Form
     {
-        public Form5()
+        public Form8()
         {
             InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

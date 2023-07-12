@@ -21,5 +21,23 @@ namespace ProjectUAS_toko_buah
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 fp = new Form1();
+            fp.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

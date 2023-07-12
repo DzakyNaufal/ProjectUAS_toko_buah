@@ -16,5 +16,12 @@ namespace ProjectUAS_toko_buah
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form2 fn = new Form2();
+            fn.Show();
+            this.Hide();
+        }
     }
 }
