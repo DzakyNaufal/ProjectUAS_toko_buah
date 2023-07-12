@@ -121,9 +121,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectUAS_toko_buah.Properties.Resources.left_arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 388);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 375);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(78, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form6";
-            this.Text = "Detail Jual";
+            this.Text = "Menjual";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -55,7 +55,7 @@ namespace ProjectUAS_toko_buah
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form1 fp = new Form1();
+            Form10 fp = new Form10();
             fp.Show();
             this.Hide();
         }

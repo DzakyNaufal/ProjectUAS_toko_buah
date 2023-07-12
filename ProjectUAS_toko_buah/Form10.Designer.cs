@@ -30,14 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -45,8 +42,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button2);
@@ -70,14 +65,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Data Master";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(250, 0);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(8, 4);
-            this.checkedListBox1.TabIndex = 1;
             // 
             // button1
             // 
@@ -113,6 +100,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Buah Rusak";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button4
             // 
@@ -124,6 +112,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Pemasok";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox2
             // 
@@ -136,35 +125,12 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.SlateGray;
-            this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(3, 250);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(154, 40);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "Detail Beli";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.SlateGray;
-            this.button6.ForeColor = System.Drawing.Color.Transparent;
-            this.button6.Location = new System.Drawing.Point(3, 296);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(154, 40);
-            this.button6.TabIndex = 29;
-            this.button6.Text = "Detail Jual";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Form10";
             this.Text = "Data Master";
@@ -179,13 +145,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
     }
 }

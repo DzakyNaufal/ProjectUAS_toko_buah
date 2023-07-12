@@ -19,13 +19,36 @@ namespace ProjectUAS_toko_buah
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Form6 fq = new Form6();
+            fq.Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form9 fq = new Form9();
             fq.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 fq = new Form5();
+            fq.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 fp = new Form7();
+            fp.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form12 fp = new Form12();
+            fp.Show();
             this.Hide();
         }
     }

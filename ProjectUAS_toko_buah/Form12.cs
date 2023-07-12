@@ -10,16 +10,31 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_toko_buah
 {
-    public partial class Form4 : Form
+    public partial class Form12 : Form
     {
-        public Form4()
+        public Form12()
         {
             InitializeComponent();
         }
 
+        private void Clear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form10 fp = new Form10();
+            Form11 fp = new Form11();
             fp.Show();
             this.Hide();
         }

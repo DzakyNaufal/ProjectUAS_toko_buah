@@ -24,7 +24,7 @@ namespace ProjectUAS_toko_buah
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form2 fn = new Form2();
+            Form10 fn = new Form10();
             fn.Show();
             this.Hide();
         }
