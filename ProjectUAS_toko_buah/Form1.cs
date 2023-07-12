@@ -22,44 +22,14 @@ namespace ProjectUAS_toko_buah
 
         }
 
-        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        private void refreshform()
         {
-            Form2 fm = new Form2();
-            fm.Show();
-            this.Hide();
-        }
-
-        private void buahToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form3 fo = new Form3();
-            fo.Show();
-            this.Hide();
-        }
-
-        private void pemasokToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form4 fr = new Form4();
-            fr.Show();
-            this.Hide();
-        }
-
-        private void detailBeliToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form5 fn = new Form5();
-            fn.Show();
-            this.Hide();
-        }
-
-        private void detailJualToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form6 fl = new Form6();
-            fl.Show();
-            this.Hide();
-        }
-
-        private void buahRusakToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            button1.Enabled = true;
+            button2.Enabled = true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -72,6 +42,11 @@ namespace ProjectUAS_toko_buah
             Form9 fs = new Form9();
             fs.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            refreshform();
         }
     }
 }

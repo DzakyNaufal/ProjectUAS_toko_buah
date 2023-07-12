@@ -120,7 +120,7 @@
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(78, 32);
             this.Update.TabIndex = 11;
-            this.Update.Text = "Update";
+            this.Update.Text = "Save";
             this.Update.UseVisualStyleBackColor = true;
             this.Update.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -161,6 +161,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form12";
             this.Text = "Memiliki";
+            this.Load += new System.EventHandler(this.Form12_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

@@ -212,5 +212,8 @@
   <ItemGroup>
     <None Include="Resources\icon_data_master-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
