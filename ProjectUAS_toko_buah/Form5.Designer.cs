@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,21 +39,36 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toko_buahDataSet = new ProjectUAS_toko_buah.toko_buahDataSet();
+            this.pemasokBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pemasokTableAdapter = new ProjectUAS_toko_buah.toko_buahDataSetTableAdapters.pemasokTableAdapter();
+            this.detailbeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.detail_beliTableAdapter = new ProjectUAS_toko_buah.toko_buahDataSetTableAdapters.detail_beliTableAdapter();
+            this.detailbeliBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.detailbeliBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.fKdetailjuidbu398D8EEEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.detail_jualTableAdapter = new ProjectUAS_toko_buah.toko_buahDataSetTableAdapters.detail_jualTableAdapter();
+            this.detailbeliBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.detailbeliBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.idbuahDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tglbeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kuantitasbeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalbeliDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idpemasokDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toko_buahDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pemasokBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKdetailjuidbu398D8EEEBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 29);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(569, 188);
-            this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
@@ -139,6 +154,16 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(429, 373);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 37);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Save";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectUAS_toko_buah.Properties.Resources.left_arrow;
@@ -150,15 +175,116 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button2
+            // toko_buahDataSet
             // 
-            this.button2.Location = new System.Drawing.Point(429, 373);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 37);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.toko_buahDataSet.DataSetName = "toko_buahDataSet";
+            this.toko_buahDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pemasokBindingSource
+            // 
+            this.pemasokBindingSource.DataMember = "pemasok";
+            this.pemasokBindingSource.DataSource = this.toko_buahDataSet;
+            // 
+            // pemasokTableAdapter
+            // 
+            this.pemasokTableAdapter.ClearBeforeFill = true;
+            // 
+            // detailbeliBindingSource
+            // 
+            this.detailbeliBindingSource.DataMember = "detail_beli";
+            this.detailbeliBindingSource.DataSource = this.toko_buahDataSet;
+            // 
+            // detail_beliTableAdapter
+            // 
+            this.detail_beliTableAdapter.ClearBeforeFill = true;
+            // 
+            // detailbeliBindingSource1
+            // 
+            this.detailbeliBindingSource1.DataMember = "detail_beli";
+            this.detailbeliBindingSource1.DataSource = this.toko_buahDataSet;
+            // 
+            // detailbeliBindingSource2
+            // 
+            this.detailbeliBindingSource2.DataMember = "detail_beli";
+            this.detailbeliBindingSource2.DataSource = this.toko_buahDataSet;
+            // 
+            // fKdetailjuidbu398D8EEEBindingSource
+            // 
+            this.fKdetailjuidbu398D8EEEBindingSource.DataMember = "FK__detail_ju__id_bu__398D8EEE";
+            this.fKdetailjuidbu398D8EEEBindingSource.DataSource = this.detailbeliBindingSource1;
+            // 
+            // detail_jualTableAdapter
+            // 
+            this.detail_jualTableAdapter.ClearBeforeFill = true;
+            // 
+            // detailbeliBindingSource3
+            // 
+            this.detailbeliBindingSource3.DataMember = "detail_beli";
+            this.detailbeliBindingSource3.DataSource = this.toko_buahDataSet;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idbuahDataGridViewTextBoxColumn,
+            this.tglbeliDataGridViewTextBoxColumn,
+            this.kuantitasbeliDataGridViewTextBoxColumn,
+            this.totalbeliDataGridViewTextBoxColumn,
+            this.idpemasokDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.detailbeliBindingSource4;
+            this.dataGridView1.Location = new System.Drawing.Point(41, 13);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(597, 231);
+            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // detailbeliBindingSource4
+            // 
+            this.detailbeliBindingSource4.DataMember = "detail_beli";
+            this.detailbeliBindingSource4.DataSource = this.toko_buahDataSet;
+            // 
+            // idbuahDataGridViewTextBoxColumn
+            // 
+            this.idbuahDataGridViewTextBoxColumn.DataPropertyName = "id_buah";
+            this.idbuahDataGridViewTextBoxColumn.HeaderText = "id_buah";
+            this.idbuahDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idbuahDataGridViewTextBoxColumn.Name = "idbuahDataGridViewTextBoxColumn";
+            this.idbuahDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tglbeliDataGridViewTextBoxColumn
+            // 
+            this.tglbeliDataGridViewTextBoxColumn.DataPropertyName = "tgl_beli";
+            this.tglbeliDataGridViewTextBoxColumn.HeaderText = "tgl_beli";
+            this.tglbeliDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tglbeliDataGridViewTextBoxColumn.Name = "tglbeliDataGridViewTextBoxColumn";
+            this.tglbeliDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // kuantitasbeliDataGridViewTextBoxColumn
+            // 
+            this.kuantitasbeliDataGridViewTextBoxColumn.DataPropertyName = "kuantitas_beli";
+            this.kuantitasbeliDataGridViewTextBoxColumn.HeaderText = "kuantitas_beli";
+            this.kuantitasbeliDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kuantitasbeliDataGridViewTextBoxColumn.Name = "kuantitasbeliDataGridViewTextBoxColumn";
+            this.kuantitasbeliDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // totalbeliDataGridViewTextBoxColumn
+            // 
+            this.totalbeliDataGridViewTextBoxColumn.DataPropertyName = "total_beli";
+            this.totalbeliDataGridViewTextBoxColumn.HeaderText = "total_beli";
+            this.totalbeliDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.totalbeliDataGridViewTextBoxColumn.Name = "totalbeliDataGridViewTextBoxColumn";
+            this.totalbeliDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // idpemasokDataGridViewTextBoxColumn
+            // 
+            this.idpemasokDataGridViewTextBoxColumn.DataPropertyName = "id_pemasok";
+            this.idpemasokDataGridViewTextBoxColumn.HeaderText = "id_pemasok";
+            this.idpemasokDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idpemasokDataGridViewTextBoxColumn.Name = "idpemasokDataGridViewTextBoxColumn";
+            this.idpemasokDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form5
             // 
@@ -166,6 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
@@ -178,20 +305,25 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Form5";
             this.Text = "Membeli";
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toko_buahDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pemasokBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKdetailjuidbu398D8EEEBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailbeliBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -204,5 +336,22 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private toko_buahDataSet toko_buahDataSet;
+        private System.Windows.Forms.BindingSource pemasokBindingSource;
+        private toko_buahDataSetTableAdapters.pemasokTableAdapter pemasokTableAdapter;
+        private System.Windows.Forms.BindingSource detailbeliBindingSource;
+        private toko_buahDataSetTableAdapters.detail_beliTableAdapter detail_beliTableAdapter;
+        private System.Windows.Forms.BindingSource detailbeliBindingSource1;
+        private System.Windows.Forms.BindingSource detailbeliBindingSource2;
+        private System.Windows.Forms.BindingSource fKdetailjuidbu398D8EEEBindingSource;
+        private toko_buahDataSetTableAdapters.detail_jualTableAdapter detail_jualTableAdapter;
+        private System.Windows.Forms.BindingSource detailbeliBindingSource3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idbuahDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tglbeliDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kuantitasbeliDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalbeliDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpemasokDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource detailbeliBindingSource4;
     }
 }

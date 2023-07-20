@@ -104,9 +104,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectUAS_toko_buah.Properties.Resources.Icon_Beli_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(213, 294);
+            this.pictureBox1.Location = new System.Drawing.Point(211, 294);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(85, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;

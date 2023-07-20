@@ -12,6 +12,8 @@ namespace ProjectUAS_toko_buah
 {
     public partial class Form2 : Form
     {
+        private string stringConnection = "data source=LAPTOP-69KQVMS1\\DZAKY_NAUFAL;" +
+            "database=toko_buah;User ID=sa;Password=123";
         public Form2()
         {
             InitializeComponent();

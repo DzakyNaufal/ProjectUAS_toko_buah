@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ProjectUAS_toko_buah
 {
@@ -66,19 +67,19 @@ namespace ProjectUAS_toko_buah
             {
                 MessageBox.Show("Masukkan Total Rusak", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
             else
             {
                 koneksi.Open();
-                string str = "insert into dbo.Memiliki" + "values(@id)";
+                string str = "insert into dbo.Memiliki (id_rusak, nama_buah, total_rusak) " +
+                "values(@id_rusak, @nama_buah, @total_rusak)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add(new SqlParameter("id", idrusak));
-                cmd.ExecuteNonQuery();
+                cmd.Parameters.Add(new SqlParameter("id_rusak", idrusak));
+                cmd.Parameters.Add(new SqlParameter("nama_buah", nmbuah));
+                cmd.Parameters.Add(new SqlParameter("total_rusak", totalrusak));
 
                 koneksi.Close();
                 MessageBox.Show("Data Berhasil Disimpan", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dataGridView();
                 refreshform();
             }
         }
@@ -92,6 +93,8 @@ namespace ProjectUAS_toko_buah
 
         private void Form12_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'toko_buahDataSet.Memiliki' table. You can move, or remove it, as needed.
+            this.memilikiTableAdapter.Fill(this.toko_buahDataSet.Memiliki);
 
         }
 
@@ -99,6 +102,17 @@ namespace ProjectUAS_toko_buah
         {
             koneksi.Open();
             string str = "select dbo,Memiliki";
+            SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            koneksi.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            koneksi.Open();
+            string str = "select * from dbo.Memiliki";
             SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
             DataSet ds = new DataSet();
             da.Fill(ds);

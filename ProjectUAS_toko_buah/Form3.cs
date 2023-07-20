@@ -45,5 +45,17 @@ namespace ProjectUAS_toko_buah
             fp.Show();
             this.Hide();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'toko_buahDataSet.buah' table. You can move, or remove it, as needed.
+            this.buahTableAdapter.Fill(this.toko_buahDataSet.buah);
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

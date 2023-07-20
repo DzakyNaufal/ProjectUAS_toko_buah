@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProjectUAS_toko_buah
 {
@@ -19,6 +20,8 @@ namespace ProjectUAS_toko_buah
         public Form4()
         {
             InitializeComponent();
+            koneksi = new SqlConnection(stringConnection);
+            refreshform();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -30,6 +33,8 @@ namespace ProjectUAS_toko_buah
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'toko_buahDataSet1.pemasok' table. You can move, or remove it, as needed.
+            this.pemasokTableAdapter.Fill(this.toko_buahDataSet1.pemasok);
 
         }
 
@@ -87,11 +92,46 @@ namespace ProjectUAS_toko_buah
             {
                 MessageBox.Show("Masukkan Email", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else
+            {
+                koneksi.Open();
+                string str = "insert into dbo.buah_rusak (Nama_Pemasok, Id_Pemasok, Alamat, No_Hp, Email) " +
+                "values(@Nama_Pemasok, @Id_Pemasok, @Alamat, @No_Hp, @Email)";
+                SqlCommand cmd = new SqlCommand(str, koneksi);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add(new SqlParameter("Nama_Pemasok", nmpmsk));
+                cmd.Parameters.Add(new SqlParameter("Id_Pemasok", idpmsk));
+                cmd.Parameters.Add(new SqlParameter("Alamat", almt));
+                cmd.Parameters.Add(new SqlParameter("No_Hp", nohp));
+                cmd.Parameters.Add(new SqlParameter("Email", email));
+                
+
+                koneksi.Close();
+                MessageBox.Show("Data Berhasil Disimpan", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                refreshform();
+            }
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             refreshform();
+        }
+
+        private void datagridview()
+        {
+            koneksi.Open();
+            string str = "select * from dbo.pemasok";
+            SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            koneksi.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
